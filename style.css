@@ -1,0 +1,90 @@
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header section styling */
+header {
+    background-color: #4CAF50; /* A vibrant green */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Card styling for sections */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    color: #FF5722; /* A bright orange */
+    border-bottom: 2px solid #FF5722;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* List styling within a card */
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li {
+    background-color: #2196F3; /* A bold blue */
+    color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+/* Footer section styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Make it responsive for smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
